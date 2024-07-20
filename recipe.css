@@ -1,0 +1,187 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background: hsla(346, 100%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(346, 100%, 83%, 1) 0%, hsla(238, 70%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFA8BD", endColorstr="#242ACF", GradientType=1 );
+  
+}
+    
+.navContainer{
+   width: 100vw;
+   min-height: 60px; 
+ 
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+nav{
+    width: 100%;
+    
+}
+#navlist{
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content:space-around ;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+#navlogo{
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 150px;
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+    color: white;
+    
+}
+#navitems a{
+    color: white;
+}
+    
+   .footerBox{
+
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  min-height:  40px; 
+   } 
+   .footerBox p{
+    color: azure;
+    font-size: 2rem;
+
+   }
+   .contentBox{
+    width:80% ;
+    margin: auto;
+    /* border: 2px solid black; */
+    background:white;
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 5px 5px 30px black;
+    background: hsla(332, 53%, 82%, 1);
+
+background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#D3F3F1", GradientType=1 );
+
+   }
+ .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+} 
+.rightBox {
+    
+     position: relative ; 
+     /* using  absolute place of relative img came in center 
+     how to solve it  */
+     overflow: hidden; 
+    transition: 0.3s linear 0s;
+    filter: drop-shadow(5px 5px 30px #bc9393);
+    
+    
+
+
+
+}
+  .rightBox .overlay{ 
+    position: relative;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(25, 24, 24, 0.927);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    opacity: 0;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+    transition: all 0.3 sec linear 0 sec ;
+}
+.rightBox .overlay 
+{ 
+   color: white; 
+  font-size: 1.5rem;  
+}     
+     
+
+
+img{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    /* border: 2px black solid  ; */
+    margin-top: 25%;
+    /* transition: all 0.6s  linear 0s ; */
+    /* position: absolute; */
+    /* overflow: hidden; */
+    
+    
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+
+}
+.leftBox h3{
+    font-size: 1.5rem;
+}
+
+.rightBox img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s linear 0s;
+    border-radius: 40px;
+}
+.item .recipebox{
+    font-style: italic;
+    gap: 3px;
+}
+
+   
+
+

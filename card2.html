@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second Card</title>
+    <style>
+              .container{
+            width: 100vw;
+            height: 100vh;
+           display:flex;
+           /* min-height: 900px; */
+           background: rgb(238,174,202);
+           background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            justify-content: center; 
+            align-items: center;
+            gap: 20px;
+
+        }
+        .card{
+            width: 400px;
+            height: 650px;
+            background:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            gap: 15px;
+
+        }
+        .card img{ 
+            width: 100%;
+            height: 35%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        
+
+
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            width: 75%;
+            text-align: center;  
+
+        }
+        #amountBox{
+             width: 70%;
+             height: 8%;
+             background-color:rgb(185, 183, 243);
+             border-radius: 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding-right: 20px;
+             padding-left: 20px;
+             
+        }
+        #leftBox{
+         /* width: fit-content; */
+         display: flex;
+         gap: 15px;
+         height: 100%;
+         flex-direction: row;
+         align-items: center;
+         
+          
+         
+                 
+        }
+        #leftBox img{
+            
+            height: 60%;
+            width: 40%;
+        }
+        
+       
+        
+        #pay{
+            width: 70%;
+            height: 7%;
+            background-color: rgb(42, 42, 107);
+            border-radius: 20px;
+            
+            color: white;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color:rgb(28, 27, 27) ;
+            font-weight: bold;
+            margin-bottom: 10px;
+            
+    
+
+        }
+        .card  img:hover{
+            transform: scale(1.2);
+            transition: all 0.3s linear 0s;
+
+        }
+
+        
+    
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="mo.jpg" alt="mountain">
+            <div class="textBox">
+                <h2>
+                    Travel Summary
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis, obcaecati quaerat rerum molestias cum debitis rem minima illo magni aliquam, sunt ratione? Placeat debitis doloremque sint facilis temporibus rerum.
+                </p>
+
+            </div>
+            <div id="amountBox">
+                <div id="leftBox">
+            <img src="music.jpeg" alt="music">
+            <div id="textamount">
+                <p>Amount 
+                    99.9$/Trip
+                </p>
+                
+
+            </div>
+                </div>
+                <div id="rightBox">
+                    <a href="#">Book</a>
+
+                </div>
+
+            </div>
+           <button id="pay" >
+            Proceed to Payment
+           </button>
+           <div class="cancelBox">
+            <a href="#">Cancel Trip</a> 
+         </div>
+        </div>
+        
+    </div>
+</body>
+</html>
